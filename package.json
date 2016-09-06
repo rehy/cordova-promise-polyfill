@@ -1,0 +1,45 @@
+{
+  "name": "cordova-promise-polyfill",
+  "version": "0.0.0",
+  "description": "This is a polyfill of the ES6 Promise for Cordova.",
+  "cordova": {
+    "id": "cordova-promise-polyfill",
+    "platforms": [
+      "android",
+      "ios",
+      "amazon-fireos",
+      "wp8"
+    ]
+  },
+  "repository": "rehy/cordova-promise-polyfill",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "cordova-wp8",
+    "promise",
+    "polyfill",
+    "es6-promise"
+  ],
+  "author": {
+    "name": "Ratson"
+  },
+  "license": "MIT",
+  "files": [
+    "*.js",
+    "*.md",
+    "*.xml",
+    "LICENSE",
+    "src",
+    "www"
+  ],
+  "scripts": {
+    "prepublish": "cpy node_modules/es6-promise/dist/es6-promise.auto.min.js www"
+  },
+  "devDependencies": {
+    "cpy-cli": "^1.0.1",
+    "es6-promise": "^4.0.5"
+  }
+}
