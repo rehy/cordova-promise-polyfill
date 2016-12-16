@@ -13,9 +13,10 @@
         <engine name="cordova" version=">=3.0" />
     </engines>
 
-    <js-module src="www/es6-promise.auto.min.js" name="Promise">
+    <js-module src="www/Promise.js" name="Promise">
         <runs />
     </js-module>
+    <js-module src="www/promise.min.js" name="promise.min"></js-module>
 
     <platform name="android"></platform>
     <platform name="ios"></platform>
